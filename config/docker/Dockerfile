@@ -27,7 +27,7 @@ FROM nginx:alpine
 ENV PAGE_TITLE="ReDoc"
 ENV PAGE_FAVICON="favicon.png"
 ENV BASE_PATH=
-ENV SPEC_URL="http://petstore.swagger.io/v2/swagger.json"
+ENV SPEC_URL="openapi.yaml"
 ENV PORT=80
 ENV REDOC_OPTIONS=
 
@@ -37,6 +37,7 @@ COPY config/docker/index.tpl.html /usr/share/nginx/html/index.html
 COPY demo/favicon.png /usr/share/nginx/html/
 COPY config/docker/nginx.conf /etc/nginx/
 COPY config/docker/docker-run.sh /usr/local/bin
+COPY config/opengov-logo.png /usr/share/nginx/html/
 
 # Provide rights to the root group to write to nginx repositories (needed to run in OpenShift)
 RUN chgrp -R 0 /etc/nginx && \
