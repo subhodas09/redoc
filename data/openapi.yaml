@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
-  title: DATA API
+  title: Working API
   description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
   version: 0.1.9
   contact:
     email: subho.das@opengov.com
     url: https://github.com/Redocly/redoc
   x-logo:
-    url: 'data/opengov-logo.png'
+    url: 'opengov-logo.png'
     altText: Opengov logo  
 servers:
   - url: http://api.example.com/v1
