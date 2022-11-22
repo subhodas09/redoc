@@ -7,7 +7,7 @@ info:
     email: subho.das@opengov.com
     url: https://github.com/Redocly/redoc
   x-logo:
-    url: 'fin/opengov-logo.png'
+    url: 'opengov-logo.png'
     altText: Opengov logo  
 servers:
   - url: http://api.example.com/v1
